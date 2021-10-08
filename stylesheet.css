@@ -1,0 +1,76 @@
+h1 {
+    background-color: beige;
+    display: inline-block;
+}
+
+details {
+    background-color: rgb(211, 211, 211);
+    margin-top: 0.5in;
+    margin-bottom: 1.27cm;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 0px;
+    display: inline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #D3D3D3;
+    margin: 0% 0% 0% 0%;
+    padding: 2em 2em 2rem 2rem;
+    border: solid black 5px 0px;
+}
+
+footer {
+    background-color: hsl(203, 92%, 75%);
+    margin: auto;
+}
+
+#logo {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+#d1 {
+    position: static;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        width: 100%;
+    }
+}
+
+details:hover {
+    color: red;
+}
+
+.form,
+.fieldset,
+button:active {
+    color: blue;
+}
+
+#DS {
+    display: grid;
+    justify-content: left;
+    place-self: unset;
+    gap: 10px 10px;
+}
