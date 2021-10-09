@@ -1,0 +1,117 @@
+/* Put beige box around title */
+h1 {
+    background-color: beige;
+    display: inline-block;
+}
+
+.date {
+    display: inline-block;
+}
+
+/* Layout for the summary part of the site */
+details {
+    background-color: rgb(211, 211, 211);
+    margin-top: 0.5in;
+    margin-bottom: 1.27cm;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 0px;
+    display: inline;
+}
+
+/* Layout for the form part of the site */
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #D3D3D3;
+    margin: 0% 0% 0% 0%;
+    padding: 2em 2em 2rem 2rem;
+    border: solid black 5px 0px;
+}
+
+/* Add a blue box to the footer */
+footer {
+    background-color: hsl(203, 92%, 75%);
+    margin: auto;
+}
+
+/* Adjust team logo size */
+img[class~="logo"] {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+/* Use position property on the first diagram */
+#d1, #d2, #d3 {
+    position: static;
+    height: 150px;
+    width: 150px;
+}
+
+/* Adjust site text for when the screen size differs */
+@media screen and (max-width: 1000px) {
+    main {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        width: 100%;
+    }
+}
+
+/* Make the hover over the summary red so the user knows it's clickable */
+details:hover {
+    color: red;
+}
+
+/* Make submit button blue when clicked so user knows it was clicked */
+form > fieldset > button:active {
+    color: blue;
+}
+
+/* Put diagrams in a grid box */
+#DS {
+    display: grid;
+    justify-content: left;
+    place-self: unset;
+    gap: 10px 10px;
+}
+
+/* Change text color of question and concerns to show speech */
+#CQC + p {
+    color: wheat;
+    text-decoration: rosybrown;
+    text-align: left;
+}
+
+/* Descendant combinator */
+main #date {
+    text-decoration: underline;
+}
+
+/* General sibling combinator */
+#title ~ h2 {
+    text-decoration: underline;
+}
+
+/* Combining two selectors with element.class */
+li.agenda {
+    text-decoration: underline;
+}
+
+/* Change font, universal selector*/
+* {
+    font-family: 'Comfortaa', cursive;
+}
