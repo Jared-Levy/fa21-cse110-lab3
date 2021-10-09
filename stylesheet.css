@@ -74,3 +74,13 @@ button:active {
     place-self: unset;
     gap: 10px 10px;
 }
+
+#content {
+    color: wheat;
+    text-decoration: rosybrown;
+    text-align: left;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
