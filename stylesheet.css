@@ -4,6 +4,10 @@ h1 {
     display: inline-block;
 }
 
+.date {
+    display: inline-block;
+}
+
 /* Layout for the summary part of the site */
 details {
     background-color: rgb(211, 211, 211);
@@ -41,15 +45,17 @@ footer {
 }
 
 /* Adjust team logo size */
-#logo {
+img[class~="logo"] {
     position: relative;
     height: 100px;
     width: 100px;
 }
 
 /* Use position property on the first diagram */
-#d1 {
+#d1, #d2, #d3 {
     position: static;
+    height: 150px;
+    width: 150px;
 }
 
 /* Adjust site text for when the screen size differs */
@@ -71,9 +77,7 @@ details:hover {
 }
 
 /* Make submit button blue when clicked so user knows it was clicked */
-.form,
-.fieldset,
-button:active {
+form > fieldset > button:active {
     color: blue;
 }
 
@@ -86,13 +90,28 @@ button:active {
 }
 
 /* Change text color of question and concerns to show speech */
-#content {
+#CQC + p {
     color: wheat;
     text-decoration: rosybrown;
     text-align: left;
 }
 
+/* Descendant combinator */
+main #date {
+    text-decoration: underline;
+}
+
+/* General sibling combinator */
+#title ~ h2 {
+    text-decoration: underline;
+}
+
+/* Combining two selectors with element.class */
+li.agenda {
+    text-decoration: underline;
+}
+
 /* Change font */
-body {
+* {
     font-family: 'Comfortaa', cursive;
 }
