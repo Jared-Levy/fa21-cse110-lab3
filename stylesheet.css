@@ -111,7 +111,7 @@ li.agenda {
     text-decoration: underline;
 }
 
-/* Change font */
+/* Change font, universal selector*/
 * {
     font-family: 'Comfortaa', cursive;
 }
