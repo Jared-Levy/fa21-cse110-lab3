@@ -1,8 +1,10 @@
+/* Put beige box around title */
 h1 {
     background-color: beige;
     display: inline-block;
 }
 
+/* Layout for the summary part of the site */
 details {
     background-color: rgb(211, 211, 211);
     margin-top: 0.5in;
@@ -20,6 +22,7 @@ details {
     display: inline;
 }
 
+/* Layout for the form part of the site */
 form {
     display: flex;
     flex-direction: column;
@@ -31,21 +34,25 @@ form {
     border: solid black 5px 0px;
 }
 
+/* Add a blue box to the footer */
 footer {
     background-color: hsl(203, 92%, 75%);
     margin: auto;
 }
 
+/* Adjust team logo size */
 #logo {
     position: relative;
     height: 100px;
     width: 100px;
 }
 
+/* Use position property on the first diagram */
 #d1 {
     position: static;
 }
 
+/* Adjust site text for when the screen size differs */
 @media screen and (max-width: 1000px) {
     main {
         width: 75%;
@@ -58,16 +65,19 @@ footer {
     }
 }
 
+/* Make the hover over the summary red so the user knows it's clickable */
 details:hover {
     color: red;
 }
 
+/* Make submit button blue when clicked so user knows it was clicked */
 .form,
 .fieldset,
 button:active {
     color: blue;
 }
 
+/* Put diagrams in a grid box */
 #DS {
     display: grid;
     justify-content: left;
@@ -75,12 +85,14 @@ button:active {
     gap: 10px 10px;
 }
 
+/* Change text color of question and concerns to show speech */
 #content {
     color: wheat;
     text-decoration: rosybrown;
     text-align: left;
 }
 
+/* Change font */
 body {
     font-family: 'Comfortaa', cursive;
 }
